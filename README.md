@@ -1,24 +1,32 @@
 # fastapi
 FastAPI, Building A Simple CRUD Application With FastAPI.
-Introduction 
+
+**Introduction **
+
 FastAPI is a modern, high-performance, web framework for building Rest/APIs/Micro services with Python 3.6+ based on standard Python type hints.
 FastAPI gives you the following Features.
 Based on open standards¶
 OpenAPI for Rest_API creation, including declarations of path operations, parameters, body requests, security, etc.
 Automatic data model documentation with JSON Schema (as OpenAPI itself is based on JSON Schema).
 Designed around these standards, after a meticulous(hey do things very carefully and with great attention to detail) study. Instead of an afterthought layer on top.
+
 This also allows using automatic client code generation in many languages.
 
-Automatic docs¶
+**Automatic docs¶**
+
 FastAPI provide interactive API documentation and exploration web user interfaces. As the framework is based on OpenAPI, there are multiple options, 2 included by default.
-Swagger UI, with interactive exploration, call and test your API directly from the browser.
 
-Swagger Documentation.Alternative API documentation with ReDoc.
+a) Swagger UI, with interactive exploration, call and test your API directly from the browser.
 
-Redoc Documentation Just Modern Python¶
+b) Swagger Documentation.Alternative API documentation with ReDoc.
+
+**Redoc Documentation Just Modern Python¶**
+
 It's all based on standard Python 3.6 type declarations (thanks to Pydantic). No new syntax to learn. Just standard modern Python.
 If you need a 2 minute refresher of how to use Python types (even if you don't use FastAPI), check the short tutorial: Python Types.
-Editor support¶
+
+**Editor support¶**
+
 All the framework was designed to be easy and intuitive to use, all the decisions were tested on multiple editors even before starting development, to ensure the best development experience.
 In the last Python developer survey it was clear that the most used feature is "autocompletion".
 The whole FastAPI framework is based to satisfy that. Autocompletion works everywhere.
@@ -26,10 +34,13 @@ You will rarely need to come back to the docs.
 Here's how your editor might help you:
 in Visual Studio Code:
 
-Short¶
+**Short¶**
+
 It has sensible defaults for everything, with optional configurations everywhere. All the parameters can be fine-tuned to do what you need and to define the API you need.
 But by default, it all "just works".
-Validation¶
+
+**Validation¶**
+
 Validation for most (or all?) Python data types, including:
 JSON objects (dict).
 JSON array (list) defining item types.
@@ -62,7 +73,8 @@ Automatic validation even for path operation parameters defined in dependencies.
 Support for complex user authentication systems, database connections, etc.
 No compromise with databases, frontends, etc. But easy integration with all of them.
 
-Unlimited "plug-ins"¶
+**Unlimited "plug-ins"¶**
+
 Or in other way, no need for them, import and use the code you need.
 Any integration is designed to be so simple to use (with dependencies) that you can create a "plug-in" for your application in 2 lines of code using the same structure and syntax used for your path operations.
 Tested¶
@@ -70,7 +82,8 @@ Tested¶
 100% type annotated code base.
 Used in production applications.
 
-Starlette features¶
+**Starlette features¶**
+
 FastAPI is fully compatible with (and based on) Starlette. So, any additional Starlette code you have, will also work.
 FastAPI is actually a sub-class of Starlette. So, if you already know or use Starlette, most of the functionality will work the same way.
 With FastAPI you get all of Starlette's features (as FastAPI is just Starlette on steroids):
@@ -84,7 +97,8 @@ Session and Cookie support.
 100% test coverage.
 100% type annotated codebase.
 
-Pydantic features¶
+**Pydantic features¶**
+
 FastAPI is fully compatible with (and based on) Pydantic. So, any additional Pydantic code you have, will also work.
 Including external libraries also based on Pydantic, as ORMs, ODMs for databases.
 This also means that in many cases you can pass the same object you get from a request directly to the database, as everything is validated automatically.
@@ -111,13 +125,21 @@ Install Virtual environment .
 a) pip install virtualenv
 b) virtualenv venv
 c) source venv/bin/activate
+
 Start by creating a new folder to hold your project called "fastapi_CRUD":
+
 mkdir fastapi_CRUD && cd fastapi_CRUD
+
 Install Dependencies 
+
 pip install fastapi uvicorn
+
 Create a New File Call App.py and write the code below 
+
 touch app.py
+
 First Root
+
 # app.py
 from fastapi import FastAPI
 
@@ -130,8 +152,15 @@ Open Your Terminal and run the following command and run the server.
 Your Server is in Running State Lets Create Fake Database to store our Framework Records.
 Define Framework  model.
 Complete File of app.py.
+
 app.py List of All Framework
 Post Framework.
-Get by ID.
-Update by id
-Delete by ID
+n this tutorial we’ll build a very simple “To Do” list application with FastAPI. Users will be able to
+
+Create To Do list items
+Read To framework items
+Update framework list items
+Delete To framework items
+Create. Read. Update. Delete. “CRUD”.
+
+We’re going to build a backend application.
